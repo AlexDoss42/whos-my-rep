@@ -6,6 +6,7 @@ const RepList = props => {
 
   return (
     <div>
+      <h2>Your {props.congress} for {props.selectedState}</h2>
       {results.map(rep => {
         return <RepTile 
                   key={rep.phone}

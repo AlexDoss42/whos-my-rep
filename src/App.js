@@ -7,7 +7,7 @@ import RepList from '../src/components/RepList'
 function App() {
 
   const [congress, setCongress] = useState(null)
-  const [selectedState, setSelectedState] = useState(null)
+  const [selectedState, setSelectedState] = useState('')
 
   return (
     <div className="App">
@@ -17,7 +17,11 @@ function App() {
           selectedState={selectedState}
           setSelectedState={setSelectedState}
         />
-        <RepList />
+
+        <RepList 
+          congress={congress}
+          selectedState={selectedState}
+        />
     </div>
   );
 }
