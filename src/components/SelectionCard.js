@@ -1,13 +1,18 @@
 import React from 'react';
+import './SelectionCard.css'
 
 const SelectionCard = props => {
 
   return(
-      <div>
+      <div className="SelectionCard">
           <h2>Senators or Representatives?</h2>
-          <div>
-            <button onClick={props.setCongress('senator')}>Senator</button>
-            <button onClick={props.setCongress('representative')}>Representative</button>
+          <div className='buttonContainer'>
+            <button 
+              onClick={props.setCongress('senator')}
+            >Senators</button>
+            <button 
+              onClick={props.setCongress('representative')}
+            >Representatives</button>
           </div>
           <h2>Which state do you live in?</h2>
           <input type='text' value={props.selectedState} onChange={props.setSelectedState()} placeholder="Ex: TX"  maxLength="2" minLength="2" required />

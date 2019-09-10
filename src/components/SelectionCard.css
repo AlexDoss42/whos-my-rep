@@ -1,0 +1,51 @@
+.SelectionCard {
+  height: 60vh;
+  width: 60vw;
+  margin: 20vh 20vw;
+
+  border: 5px solid red;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: blue;
+  font-size: 1.5rem
+}
+
+.buttonContainer {
+  width: 60%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input {
+  width: 50px;
+
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+
+  color: blue;
+
+  text-align: center;
+  font-weight: bold;
+}

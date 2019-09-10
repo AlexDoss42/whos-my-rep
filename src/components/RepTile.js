@@ -18,7 +18,7 @@ const RepTile = props => {
       <div>
         <h4>Phone: {props.rep.phone}</h4>
         <h4>Office: {props.rep.office}</h4>
-        <h4>Website: <a href={props.rep.link} target='_blank'>{props.rep.link}</a></h4>
+        <h4>Website: <a href={props.rep.link} target='_blank' rel="noopener noreferrer">{props.rep.link}</a></h4>
       </div>
     </div>
   )

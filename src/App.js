@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="App">
-        <h1>This is the who's my rep page</h1>
         <SelectionCard 
           congress={congress} 
           setCongress={setCongress}
