@@ -8,21 +8,28 @@ function App() {
 
   const [congress, setCongress] = useState(null)
   const [selectedState, setSelectedState] = useState('')
+  const [listOfReps, setListOfReps] = useState(null)
 
-  let content = 
-      <SelectionCard 
-        congress={congress} 
-        setCongress={setCongress}
-        selectedState={selectedState}
-        setSelectedState={setSelectedState}
-      />
+  const submitHandler = async (e, setListOfReps) => {
+    e.preventDefault()
+    setListOfReps()
+  }
 
-if(selectedState){
-       content = <RepList 
-          congress={congress}
-          selectedState={selectedState}
-        />
-}
+  let content = <SelectionCard 
+                  congress={congress}   
+                  setCongress={setCongress}
+                  selectedState={selectedState}
+                  setSelectedState={setSelectedState}
+                  submitHandler={submitHandler}
+                />
+
+  if(listOfReps){
+    content = <RepList 
+                congress={congress}
+                selectedState={selectedState}
+                listOfReps={listOfReps}
+              />
+  }
 
   return (
     <div className="App">

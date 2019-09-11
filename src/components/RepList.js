@@ -5,7 +5,7 @@ import RepTile from './RepTile'
 const RepList = props => {
 
   return (
-    <div>
+    <div className="repList">
       <h2>Your {props.congress} for {props.selectedState}</h2>
       {results.map(rep => {
         return <RepTile 

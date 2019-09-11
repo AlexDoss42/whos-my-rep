@@ -37,6 +37,13 @@ button {
   text-transform: uppercase;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 input {
   width: 50px;
 
