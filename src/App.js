@@ -9,19 +9,24 @@ function App() {
   const [congress, setCongress] = useState(null)
   const [selectedState, setSelectedState] = useState('')
 
-  return (
-    <div className="App">
-        <SelectionCard 
-          congress={congress} 
-          setCongress={setCongress}
-          selectedState={selectedState}
-          setSelectedState={setSelectedState}
-        />
+  let content = 
+      <SelectionCard 
+        congress={congress} 
+        setCongress={setCongress}
+        selectedState={selectedState}
+        setSelectedState={setSelectedState}
+      />
 
-        <RepList 
+if(selectedState){
+       content = <RepList 
           congress={congress}
           selectedState={selectedState}
         />
+}
+
+  return (
+    <div className="App">
+        {content}
     </div>
   );
 }

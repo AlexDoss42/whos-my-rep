@@ -1,0 +1,15 @@
+.repContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 50px 10vw;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 1px red solid;
+}
