@@ -4,22 +4,15 @@ import './selectionCard.css'
 
 const SelectionCard = props => {
 
-  // if(congress === null) {
-  //   alert('make sure to pick senators or representatives')
-  // } else if(congress === 'senators') {
-  //     console.log('You are asking for the senators in', selectedState)
-  //     // Axios.get(`/senators/${props.selectedState}`)
-  // } else if(props.congress === 'representatives') {
-  //     console.log('you are asking for the ', congress, ' in ', selectedState)
-  //     // Axios.get(`/representatives/${props.selectedState}`)
-  // } else 
-  // console.log('error in your submitHandler')
-  
   return(
       <div className="SelectionCard">
         <h2>Senators or Representatives?</h2>
         <form onSubmit={props.submitHandler}>
-          <select id='SenRep' required>
+          <select 
+            id='SenRep' 
+            onChange={e => {props.setCongress(e.target.value)}} 
+            required
+          >
             <option value=''></option>
             <option value='senators'>Senators</option>
             <option value='representatives'>Representatives</option>
@@ -28,7 +21,12 @@ const SelectionCard = props => {
 
           <h2>Which state do you live in?</h2>
 
-          <select id="state" name="state" required>
+          <select   
+            id="state" 
+            name="state" 
+            onChange={e => {props.setSelectedState(e.target.value)}} 
+            required
+          >
             <option value=""></option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>

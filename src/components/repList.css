@@ -1,11 +1,8 @@
-.repList {
+.listCard {
   height: 80%;
   width: 50%;
   margin: 0;
-  padding: 0;
-  overflow: scroll;
-  overflow: -moz-scrollbars-none;
-  -ms-overflow-style: none;
+  padding: 20px;
 
   border: 5px solid red;
   border-radius: 25px;
@@ -17,7 +14,28 @@
 
   background-color: rgba(255,255,255, 0.5);
   color: blue;
-  /* font-size: 1.5rem */
+  font-size: 1.5rem;
+}
+
+.repList {
+  height: 80%;
+  width: 75%;
+  margin: 0;
+  padding-top: 40px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: rgba(255,255,255, 0.5);
+  color: blue;
+  font-size: 1rem
 }
 
 .repList::-webkit-scrollbar { width: 0 !important }
