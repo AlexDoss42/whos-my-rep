@@ -1,15 +1,9 @@
 import React from 'react';
-import './SelectionCard.css'
+import './selectionCard.css'
 
 
 const SelectionCard = props => {
 
-// const submitHandler = (e) => {
-//   e.preventDefault()
-
-//   console.log('you submitted')
-
-  
   // if(congress === null) {
   //   alert('make sure to pick senators or representatives')
   // } else if(congress === 'senators') {
@@ -20,8 +14,7 @@ const SelectionCard = props => {
   //     // Axios.get(`/representatives/${props.selectedState}`)
   // } else 
   // console.log('error in your submitHandler')
-// }
-
+  
   return(
       <div className="SelectionCard">
         <h2>Senators or Representatives?</h2>

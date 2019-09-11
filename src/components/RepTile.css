@@ -1,8 +1,8 @@
 .repContainer {
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  margin: 50px 10vw;
+  width: 80%;
+  margin: 50px 10%;
 }
 
 .headerContent {

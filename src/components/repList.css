@@ -1,0 +1,24 @@
+.repList {
+  height: 80%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+
+  border: 5px solid red;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(255,255,255, 0.5);
+  color: blue;
+  /* font-size: 1.5rem */
+}
+
+.repList::-webkit-scrollbar { width: 0 !important }
+

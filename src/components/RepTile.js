@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './RepTile.css'
+import './repTile.css'
 
 const RepTile = props => {
 

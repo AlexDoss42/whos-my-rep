@@ -15,21 +15,21 @@ function App() {
     console.log('you submitted even though it is in props now')
   }
 
-  let content = <SelectionCard 
-                  congress={congress}   
-                  setCongress={setCongress}
-                  selectedState={selectedState}
-                  setSelectedState={setSelectedState}
-                  submitHandler={submitHandler}
-                />
+  // let content = <SelectionCard 
+  //                 congress={congress}   
+  //                 setCongress={setCongress}
+  //                 selectedState={selectedState}
+  //                 setSelectedState={setSelectedState}
+  //                 submitHandler={submitHandler}
+  //               />
 
-  if(listOfReps){
-    content = <RepList 
+  // if(listOfReps){
+   let content = <RepList 
                 congress={congress}
                 selectedState={selectedState}
                 listOfReps={listOfReps}
               />
-  }
+  // }
 
   return (
     <div className="App">

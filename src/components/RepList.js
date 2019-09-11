@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './repList.css'
+
 import RepTile from './RepTile'
 
 const RepList = props => {
