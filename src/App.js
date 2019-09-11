@@ -10,9 +10,9 @@ function App() {
   const [selectedState, setSelectedState] = useState('')
   const [listOfReps, setListOfReps] = useState(null)
 
-  const submitHandler = async (e, setListOfReps) => {
+  const submitHandler = async (e) => {
     e.preventDefault()
-    setListOfReps()
+    console.log('you submitted even though it is in props now')
   }
 
   let content = <SelectionCard 

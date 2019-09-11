@@ -1,7 +1,8 @@
 .SelectionCard {
-  height: 60vh;
-  width: 60vw;
-  margin: 20vh 20vw;
+  height: 50%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
 
   border: 5px solid red;
   border-radius: 25px;
@@ -11,6 +12,7 @@
   justify-content: center;
   align-items: center;
 
+  background-color: rgba(255,255,255, 0.5);
   color: blue;
   font-size: 1.5rem
 }
@@ -27,6 +29,7 @@
 button {
   width: 10vw;
   height: 5vh;
+  margin-top: 15px;
 
   border: none;
   border-radius: 5px;
@@ -44,7 +47,7 @@ form {
   align-items: center;
 }
 
-input {
+/* input {
   width: 50px;
 
   border: 2px solid red;
@@ -55,4 +58,4 @@ input {
 
   text-align: center;
   font-weight: bold;
-}
+} */
