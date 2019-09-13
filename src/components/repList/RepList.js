@@ -2,7 +2,7 @@ import React from 'react';
 
 import './repList.css'
 
-import RepTile from './RepTile'
+import RepTile from '../repTile/RepTile'
 
 const RepList = props => {
  console.log(props.listOfReps)

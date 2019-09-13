@@ -3,8 +3,8 @@ import Axios from 'axios'
 
 import './App.css';
 
-import SelectionCard from '../src/components/SelectionCard'
-import RepList from '../src/components/RepList'
+import SelectionCard from './components/selectionCard/SelectionCard'
+import RepList from './components/repList/RepList'
 
 function App() {
 
