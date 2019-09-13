@@ -11,7 +11,7 @@ const RepList = props => {
       <h2>Your {props.congress} for {props.selectedState}</h2>
       
       
-      <ul className='repList'>
+      <div className='repList'>
         {props.listOfReps.map(rep => {
         return <RepTile
         key={rep.phone}
@@ -19,7 +19,7 @@ const RepList = props => {
         congress={props.congress}
         />
         })}
-      </ul>
+      </div>
     </div>
   )
 }

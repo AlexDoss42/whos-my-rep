@@ -45,12 +45,12 @@ const RepTile = props => {
   }
 
   return (
-    <li className="repContainer">
+    <div className="repContainer">
       <div className="headerContent">
         <h3 className='repName' onClick={showDetailsHandler}>{props.rep.name}</h3>
         <h3>Party: {props.rep.party}</h3>
       </div>
-    </li>
+    </div>
   )
 
 }
