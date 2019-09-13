@@ -87,14 +87,3 @@ const SelectionCard = props => {
 }
 
 export default SelectionCard
-
-
-
-         {/* <div className='buttonContainer'>
-            <button 
-              onClick={props.setCongress('senators')}
-            >Senators</button>
-            <button 
-              onClick={props.setCongress('representatives')}
-            >Representatives</button>
-          </div> */}
