@@ -22,7 +22,7 @@
   width: 75%;
   margin: 0;
   padding-top: 60px;
-  padding-top: 60px;
+  padding-bottom: 60px;
   overflow: scroll;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
@@ -32,7 +32,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   background-color: rgba(255,255,255, 0.5);
@@ -41,4 +41,3 @@
 }
 
 .repList::-webkit-scrollbar { width: 0 !important }
-
