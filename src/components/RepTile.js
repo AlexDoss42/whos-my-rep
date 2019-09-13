@@ -8,10 +8,9 @@ const RepTile = props => {
 
   const showDetailsHandler = () => {
     setRepDetails(!repDetails)
-    console.log('You should now see all the details of the rep', repDetails)
   }
 
-  if(repDetails && props.congress === 'representatives'){
+  if(repDetails && props.congress === 'Representatives'){
     return (
       <li className="repContainer expanded">
         <div className="headerContent">
@@ -28,7 +27,7 @@ const RepTile = props => {
     )
   }
 
-  if(repDetails && props.congress === 'senators'){
+  if(repDetails && props.congress === 'Senators'){
     return (
       <li className="repContainer expanded">
         <div className="headerContent">

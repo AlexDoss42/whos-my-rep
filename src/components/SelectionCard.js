@@ -14,8 +14,8 @@ const SelectionCard = props => {
             required
           >
             <option value=''></option>
-            <option value='senators'>Senators</option>
-            <option value='representatives'>Representatives</option>
+            <option value='Senators'>Senators</option>
+            <option value='Representatives'>Representatives</option>
           </select>
 
 

@@ -12,16 +12,22 @@ function App() {
   const [selectedState, setSelectedState] = useState('')
   const [listOfReps, setListOfReps] = useState(null)
 
+  const resetHandler = () => {
+    setCongress(null)
+    setSelectedState('')
+    setListOfReps(null)
+  }
+
   const submitHandler = async (e) => {
     e.preventDefault()
     if(congress === null || selectedState === '') {
       window.alert('make sure to pick senators or representatives and/or a state')
-    } else if(congress === 'senators') {
+    } else if(congress === 'Senators') {
         Axios.get(`http://localhost:3000/senators/${selectedState}`)
         .then(res => {
           setListOfReps(res.data.results)
         })
-    } else if(congress === 'representatives') {
+    } else if(congress === 'Representatives') {
         Axios.get(`http://localhost:3000/representatives/${selectedState}`)
         .then(res => {
           setListOfReps(res.data.results)
@@ -43,6 +49,7 @@ function App() {
                 congress={congress}
                 selectedState={selectedState}
                 listOfReps={listOfReps}
+                resetHandler={resetHandler}
               />
   }
 
@@ -54,24 +61,3 @@ function App() {
 }
 
 export default App;
-
-let results = [  
-  {  
-     "name":"Orrin Hatch",
-     "party":"R",
-     "state":"UT",
-     "district":"Senior Seat",
-     "phone":"202-224-5251",
-     "office":"104 Hart Senate Office Building",
-     "link":"http://www.hatch.senate.gov"
-  },
-  {  
-     "name":"Mike Lee",
-     "party":"R",
-     "state":"UT",
-     "district":"Junior Seat",
-     "phone":"202-224-5444",
-     "office":"316 Hart Senate Office Building",
-     "link":"http://www.lee.senate.gov"
-  }
-]

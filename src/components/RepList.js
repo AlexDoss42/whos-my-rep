@@ -20,6 +20,7 @@ const RepList = props => {
         />
         })}
       </div>
+      <button onClick={props.resetHandler}>Reset</button>
     </div>
   )
 }
