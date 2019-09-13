@@ -14,15 +14,18 @@ function App() {
 
   const submitHandler = async (e) => {
     e.preventDefault()
-    if(congress === null) {
-      alert('make sure to pick senators or representatives and/or a state')
+    if(congress === null || selectedState === '') {
+      window.alert('make sure to pick senators or representatives and/or a state')
     } else if(congress === 'senators') {
-        console.log('You are asking for the senators in', selectedState)
-        setListOfReps(Axios.get(`/senators/${selectedState}`))
+        Axios.get(`http://localhost:3000/senators/${selectedState}`)
+        .then(res => {
+          setListOfReps(res.data.results)
+        })
     } else if(congress === 'representatives') {
-        console.log('you are asking for the ', congress, ' in ', selectedState)
-        // setListOfReps(Axios.get(`/representatives/${selectedState}`))
-        setListOfReps(results)
+        Axios.get(`http://localhost:3000/representatives/${selectedState}`)
+        .then(res => {
+          setListOfReps(res.data.results)
+        })
     } else 
     console.log('error in your submitHandler')
   }

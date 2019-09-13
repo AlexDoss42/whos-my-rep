@@ -16,6 +16,7 @@ const RepList = props => {
         return <RepTile
         key={rep.phone}
         rep= {rep}
+        congress={props.congress}
         />
         })}
       </ul>
