@@ -33,7 +33,7 @@ function App() {
           setListOfReps(res.data.results)
         })
     } else 
-    console.log('error in your submitHandler')
+    console.log('error in your submitHandler in App.js')
   }
 
   let content = <SelectionCard 
